@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #181A1B;
+}
+
+/* || Navbar || */
+
+.navbar {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #e8eaed;
+    font-weight: 400;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.app-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 5px);
+    grid-template-rows: repeat(3, 5px);
+    gap: 4px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.app-icon span {
+    width: 5px;
+    height: 5px;
+    background-color: #e8eaed !important;
+    border-radius: 50%;
+    
+}
+
+#nav-btn{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* || Main || */
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+    padding-top: 150px;
+
+    width: 100%;
+}
+
+main img{
+    /* width: 30%;
+    height: 10%; */
+    width: 430px;
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+.search-bar{
+    display: flex;
+    width: min(90%, 1120px);
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #5f6368;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.search-bar:hover{
+    cursor: text;
+}
+
+.leftSearch-bar{
+    display: flex;
+    gap: 20px;
+}
+
+.leftSearch-bar .ri-add-line:hover{
+    cursor: pointer;
+    background-color: grey;
+    opacity: calc(.5);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 50%;
+}
+
+.rightSearch-bar{
+    display: flex;
+    gap: 25px;
+}
+
+.rightSearch-bar .ri-mic-fill:hover{
+    cursor: pointer;
+    background-color: grey;
+    opacity: calc(.5);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 50%;
+}
+
+.rightSearch-bar .ri-camera-ai-2-line:hover{
+    cursor: pointer;
+    background-color: grey;
+    opacity: calc(.5);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 50%;
+}
+
+/* .search-bar p[
+    opacity: .5%;
+] */
+
+#main-btn{
+    padding: 5px 8px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* || Hero Button || */
+.hero-btn{
+    display: flex;
+    gap: 20px;
+}
+
+#leftHero-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 15px;
+    background-color: #32202F;
+}
+
+#rightHero-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 15px;
+    background-color: #32202F;
+}
+
+#leftHero-btn:hover{
+    cursor: pointer;
+    background-color: #543a50;
+}
+
+#rightHero-btn:hover{
+    cursor: pointer;
+    background-color: #543a50;
+}
